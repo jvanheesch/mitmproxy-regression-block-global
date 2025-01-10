@@ -5,3 +5,5 @@ services:
       --mode regular@443
     ports:
       - "443:443"
+    volumes:
+      - ./ca/in/mitmproxy-ca.pem:/home/mitmproxy/.mitmproxy/mitmproxy-ca.pem
