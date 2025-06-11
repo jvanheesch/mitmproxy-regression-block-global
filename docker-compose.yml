@@ -1,6 +1,6 @@
 services:
   gateway-in:
-    image: mitmproxy/mitmproxy
+    image: mitmproxy/mitmproxy:12.1.1
     command: mitmdump
       --mode regular@443
     ports:
